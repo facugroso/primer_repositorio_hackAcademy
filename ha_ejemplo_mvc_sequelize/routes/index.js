@@ -7,6 +7,12 @@ const userRoutes = require("./userRoutes");
 const articleRoutes = require("./articleRoutes");
 const commentRoutes = require("./commentRoutes");
 
+module.exports = {
+  userRoutes,
+  articleRoutes,
+  commentRoutes,
+};
+
 /**
  * Otra alternativa podría ser organizar las rutas según su nivel de
  * privacidad (ej: si son rutas públicas o privadas).
@@ -16,18 +22,20 @@ const commentRoutes = require("./commentRoutes");
  * relacionados al Panel de Control (Admin). Notar que si se está construyendo
  * una API esta alternativa no tendría sentido.
  */
-
+/*
 const publicRoutes = require("./publicRoutes");
 const privateRoutes = require("./privateRoutes");
 
 module.exports = (app) => {
-  /**
-   * Notar que si el sitio está en español, tiene sentido que las URLs que se
-   * ven en la barra de direcciiones del navegador también lo estén. No así los
-   * nombres de variables, funciones, etc, que siempre se recomienda que estén
-   * en inglés.
-   */
+  */
+/**
+ * Notar que si el sitio está en español, tiene sentido que las URLs que se
+ * ven en la barra de direcciiones del navegador también lo estén. No así los
+ * nombres de variables, funciones, etc, que siempre se recomienda que estén
+ * en inglés.
+ */
 
+/*
   app.use("/usuarios", userRoutes);
   app.use("/articulos", articleRoutes);
   app.use("/comentarios", commentRoutes);
@@ -35,3 +43,4 @@ module.exports = (app) => {
   app.use("/", publicRoutes);
   app.use("/panel", privateRoutes);
 };
+*/
